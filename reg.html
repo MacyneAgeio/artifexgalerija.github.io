@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Registration Form
+        </title>
+        <link rel="stylesheet" href="register.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>REGISTRATION</h1>
+            <form id="registrationForm">
+                <!--name starts-->
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <!--email starts-->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <!--contact starts-->
+                <div class="form-group">
+                    <label for="contact">Contact Number:</label>
+                    <input type="tel" id="contact" name="contact" required>
+                </div>
+                <!--country starts-->
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country" required>
+                        <option value="blank"></option>
+                        <option value="phil">Philippines</option>
+                        <option value="murica">America</option>
+                        <option value="other">Ireland</option>
+                    </select>
+                </div>
+                <!--city starts-->
+                <div class="form-group">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <!--pass starts-->
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <!--confirmpass starts-->
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password:</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                </div>
+                <!--gender starts-->
+                <div class="form-group">
+                    <label for="gender">Gender:</label>
+                    <select id="gender" name="gender" required>
+                        <option value="blank"></option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Prefer Not To Say</option>
+                    </select>
+                </div>
+                <button type="submit">SUBMIT</button>
+                <a href="index.html">HOME</a>
+                <p>Already have an account? <a href="signin.html">Login</a></p>
+            </form>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
